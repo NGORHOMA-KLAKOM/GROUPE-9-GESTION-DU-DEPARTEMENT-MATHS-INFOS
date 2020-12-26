@@ -1,7 +1,9 @@
 <?php
+    //Page Administrateur
     require_once('role.php');
     require_once("connexiondb.php");
     require_once("identifier.php");
+    //recuperation des information de connexion
     $login=isset($_GET['login'])?$_GET['login']:"";
     
     $size=isset($_GET['size'])?$_GET['size']:3;

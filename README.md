@@ -4,4 +4,5 @@ Travail Personnel Thème : Gestion du département Maths/Infos
 	du département MI.
 	
 	###
-	Consulter le fichier "Tache.doc" 
+	si vous êtes menbre du groupe de travail
+	Consulter le fichier "tacheMembreGroupe.doc" 

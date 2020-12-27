@@ -17,23 +17,24 @@ $resultat = $pdo->query($requete);
 if ($user = $resultat->fetch()) {
     // 
     if ($user['etat'] == 1) {
+        
         //redirection vers la page admin si l'utilisateur est un Administrateur
         if ($user["role"] == "ADMIN") {
             $_SESSION['user'] = $user;
-            header('location:../pages/adminPage.php');
+            header('location:adminPage.php');
         } 
         
         // redirection vers le dashbord du chef de departement si l'utilisateut est un chef de departement
             if ($user["role"] == "CD") {
             $_SESSION['user'] = $user;
-            header('location:../index.php');
+            header('location:chefDeparPage.php');
         } 
         
         // redirection vers le dashbord de l'enseignant si l'utilisateur est un enseignant
             if ($user["role"] == "ENSEIGNANT") {
             $_SESSION['user'] = $user;
-            header('location:../index.php');
-        }
+            echo "Enseignant";
+            }
     } else {
         // Message d'erreur de connexion
         $_SESSION['erreurLogin'] = "<strong>Erreur!!</strong> Votre compte est désactivé.<br> Veuillez contacter l'administrateur";

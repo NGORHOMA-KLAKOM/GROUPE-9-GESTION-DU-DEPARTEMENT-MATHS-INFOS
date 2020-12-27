@@ -49,7 +49,7 @@ session_destroy();
 
                     &nbsp &nbsp
 
-                   
+                    <a href="nouvelUtilisateur.php">Créer un compte</a>
                 </p>
             </form>
         </div>
